@@ -5,7 +5,7 @@ using UnityEngine;
 namespace PathCreation.Examples {
     public class RoadMeshCreator : PathSceneTool {
         [Header ("Road settings")]
-        public float roadWidth = .4f;
+        public float roadWidth = 2f;
         [Range (0, .5f)]
         public float thickness = .15f;
         public bool flattenSurface;
@@ -126,7 +126,7 @@ namespace PathCreation.Examples {
 
             meshHolder.transform.rotation = Quaternion.identity;
             meshHolder.transform.position = Vector3.zero;
-            meshHolder.transform.localScale = Vector3.one;
+            //meshHolder.transform.localScale = Vector3.one;
 
             // Ensure mesh renderer and filter components are assigned
             if (!meshHolder.gameObject.GetComponent<MeshFilter> ()) {
