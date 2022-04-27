@@ -31,7 +31,7 @@ namespace PathCreation.Examples {
         }
 
         void CreateRoadMesh () {
-            Vector3[] verts = new Vector3[path.NumPoints * 8];
+            Vector3[] verts = new Vector3[path.NumPoints * 12];
             Vector2[] uvs = new Vector2[verts.Length];
             Vector3[] normals = new Vector3[verts.Length];
 
