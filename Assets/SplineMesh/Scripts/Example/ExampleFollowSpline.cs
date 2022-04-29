@@ -4,13 +4,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace SplineMesh {
-    /// <summary>
-    /// Example of component to show that the spline is an independant mathematical component and can be used for other purposes than mesh deformation.
-    /// 
-    /// This component is only for demo purpose and is not intended to be used as-is.
-    /// 
-    /// We only move an object along the spline. Imagine a camera route, a ship patrol...
-    /// </summary>
+    
     [ExecuteInEditMode]
     [RequireComponent(typeof(Spline))]
     public class ExampleFollowSpline : MonoBehaviour {
